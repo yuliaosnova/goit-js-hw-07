@@ -22,7 +22,7 @@ function createCardsMarkup(galleryItems) {
 }
 
 
-new SimpleLightbox('.gallery', { 
+new SimpleLightbox('.gallery a', { 
 		captionsData: 'alt',
 		captionsDelay: 250,
 		animationSpeed: 250,
