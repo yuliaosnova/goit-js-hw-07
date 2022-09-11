@@ -1,14 +1,14 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const gallery = document.querySelector(".gallery");
 const cardsMarkup = createCardsMarkup(galleryItems);
 
 gallery.insertAdjacentHTML("beforeend", cardsMarkup);
 
-gallery.addEventListener("click", onGalleryClick);
+// gallery.addEventListener("click", onGalleryClick);
 
 function createCardsMarkup(galleryItems) {
   return galleryItems
@@ -21,15 +21,6 @@ function createCardsMarkup(galleryItems) {
     .join("");
 }
 
-// gallery.addEventListener('click', onGalleryClick)
-
-// function onGalleryClick(event) {
-// 	event.preventDefault();
-
-// 	if (event.target.nodeName !== "IMG") {
-// 		return;
-// 	}
-// }
 
 new SimpleLightbox('.gallery', { 
 		captionsData: 'alt',
